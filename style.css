@@ -1,0 +1,72 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #0f172a;
+  color: #f1f5f9;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+#player {
+  background-color: #1e293b;
+  padding: 30px;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  width: 300px;
+}
+
+body.claro #player {
+  background-color: #fff;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+#capa {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+h2 {
+  margin: 10px 0 5px;
+  font-size: 1.3rem;
+}
+
+h3 {
+  margin: 0 0 15px;
+  font-weight: normal;
+  font-size: 1rem;
+  color: #94a3b8;
+}
+
+.tempo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 5px;
+}
+
+input[type="range"] {
+  flex-grow: 1;
+  accent-color: #3b82f6;
+}
+
+.controles button {
+  margin-top: 20px;
+  margin: 0 5px;
+  background: #3b82f6;
+  border: none;
+  color: white;
+  font-size: 1.2rem;
+  padding: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.controles button:hover {
+  background: #2563eb;
+}

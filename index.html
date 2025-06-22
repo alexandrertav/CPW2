@@ -3,47 +3,24 @@
 <head>
   <meta charset="UTF-8">
   <title>Player de Música</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #111;
-      color: white;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      height: 100vh;
-    }
-    #player {
-      background: #222;
-      padding: 20px;
-      border-radius: 10px;
-      text-align: center;
-    }
-    button {
-      margin: 10px;
-      padding: 10px 20px;
-      background: #1e40af;
-      border: none;
-      color: white;
-      border-radius: 5px;
-      cursor: pointer;
-    }
-    button:hover {
-      background: #2563eb;
-    }
-  </style>
+  
+    <link rel="stylesheet" type="text/css" href="style.css"/> 
+
 </head>
-<body>
-  <div id="player">
-    <h2 id="nome-musica">Música: --</h2>
-    <audio id="audio" src=""></audio>
-    <div>
-      <button onclick="playMusica()">▶️ Play</button>
-      <button onclick="pauseMusica()">⏸️ Pause</button>
-      <button onclick="proximaMusica()">⏭️ Próxima</button>
-    </div>
+<div id="player">
+  <img id="capa" src="" alt="Capa da música">
+
+  <h2 id="nome-musica">Música: --</h2>
+  <h3 id="artista">Artista: --</h3>
+
+  <audio id="audio"></audio>
+
+  <div class="controles">
+    <button onclick="musicaAnterior()">⏮️</button>
+     <button id="botao-play-pause" onclick="alternarPlayPause()">▶️</button>
+    <button onclick="proximaMusica()">⏭️</button>
   </div>
+</div>
 
   <script src="player.js"></script>
 </body>
