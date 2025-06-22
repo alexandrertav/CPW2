@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Player de Música</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #111;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+    #player {
+      background: #222;
+      padding: 20px;
+      border-radius: 10px;
+      text-align: center;
+    }
+    button {
+      margin: 10px;
+      padding: 10px 20px;
+      background: #1e40af;
+      border: none;
+      color: white;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #2563eb;
+    }
+  </style>
+</head>
+<body>
+  <div id="player">
+    <h2 id="nome-musica">Música: --</h2>
+    <audio id="audio" src=""></audio>
+    <div>
+      <button onclick="playMusica()">▶️ Play</button>
+      <button onclick="pauseMusica()">⏸️ Pause</button>
+      <button onclick="proximaMusica()">⏭️ Próxima</button>
+    </div>
+  </div>
+
+  <script src="player.js"></script>
+</body>
+</html>
