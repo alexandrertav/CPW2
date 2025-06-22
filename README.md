@@ -3,6 +3,7 @@ Um player de música simples feito com **HTML**, **CSS** e **JavaScript**, utili
 Funcionalidades
 Reprodução de músicas (`.mp3`)
 Exibição da capa da música e nome do artista
+
 Botões de:
   - Play/Pause (alternando automaticamente)
   -  Música anterior
